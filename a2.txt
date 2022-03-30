@@ -1,0 +1,7 @@
+$service_name = Read-Host "Name of Service"
+$service_status = Get-Service $service_name | Select-Object name,status
+if($service_status.Status -eq 'Running')
+{Write-Host "Service is Running"}
+else{
+Start-Service $service_name
+Get-Service $service_name}
