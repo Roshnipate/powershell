@@ -1,0 +1,5 @@
+$ComputerMemory = Get-WmiObject -Class win32_operatingsystem -ErrorAction Stop
+$systemMemory = ((($ComputerMemory.TotalVisibleMemorySize - $ComputerMemory.FreePhysicalMemory)*100)/ $ComputerMemory.TotalVisibleMemorySize)
+$Round = [math]::Round($systemMemory, 2) 
+
+"Used space percentage:- "+$Round | Out-File "C:\Users\Administrator.Demo\Desktop\task2.txt" -force -append
