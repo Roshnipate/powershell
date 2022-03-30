@@ -1,0 +1,2 @@
+ cat .\me.txt
+ Add-Content -Path .\me.txt -Value (Get-Date) 
