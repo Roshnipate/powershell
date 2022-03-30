@@ -1,0 +1,1 @@
+ write-host (1,3,5,7) -Separator " *&=" -Backgroundcolor DarkYellow 
