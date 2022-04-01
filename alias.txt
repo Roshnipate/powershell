@@ -1,0 +1,3 @@
+Get-Alias
+function Get-SystemEventlog {Get-Eventlog -LogName System}
+Set-Alias -Name syslog -Value Get-SystemEventlog
