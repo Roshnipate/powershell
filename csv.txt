@@ -1,0 +1,1 @@
+Get-process | Export-csv -path "c:\users\public\Demofile.csv"
